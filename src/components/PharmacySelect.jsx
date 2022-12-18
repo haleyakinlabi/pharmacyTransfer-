@@ -1,12 +1,16 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 const PharmacySelect = (props) => {
+
+    
+
+    
 
     return(
     
         <fieldset>
             <label for={props.id}>{props.label}</label>
-            <select id={props.id}>
+            <select id={props.id} onChange={props.onChange()}>
                 <option>Lees</option>
                 <option>Smiths</option>
                 <option>Walgreens</option>
@@ -14,8 +18,9 @@ const PharmacySelect = (props) => {
             </select>
         </fieldset>
     )
-
 }
+
+
 
 
 
